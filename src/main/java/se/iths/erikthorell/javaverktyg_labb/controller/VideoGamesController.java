@@ -16,7 +16,8 @@ public class VideoGamesController {
                 new VideoGames("World of Warcraft", "MMORPG", 2004, "Blizzard Entertainment Co."),
                 new VideoGames("Stardew Valley", "Farming Sim RPG", 2016, "ConcernedApe"),
                 new VideoGames("Pokémon Arceus", "Action RPG", 2022, "GameFreak"),
-                new VideoGames("Satisfactory", "Factory and Automation Simulation", 2019, "Coffee Stain Studios")
+                new VideoGames("Satisfactory", "Factory and Automation Simulation", 2019, "Coffee Stain Studios"),
+                new VideoGames("Pokémon Red", "RPG", 1996, "GameFreak")
         );
         model.addAttribute("videogames", videogames);
         return "videogames";
