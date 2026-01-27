@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Games</title>
+</head>
+<body>
+<h1>Video Game List</h1>
+
+<ul>
+    <li th:each="videogame : ${videogames}" style="margin-bottom: 20px">
+        <strong th:text="${videogame.title}"></strong><br>
+        Genre: <span th:text="${videogame.genre}"></span><br>
+        Release year: <span th:text="${videogame.releaseYear}"></span><br>
+        Released by: <span th:text="${videogame.studioName}"></span><br>
+    </li>
+</ul>
+</body>
+</html>
