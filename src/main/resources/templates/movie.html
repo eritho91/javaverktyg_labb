@@ -8,7 +8,7 @@
 <h1>Movie List</h1>
 
 <ul>
-    <li th:each="movie : ${movies}">
+    <li th:each="movie : ${movies}" style="margin-bottom: 20px;>
         <strong th:text="${movie.title}"></strong><br>
         Release year: <span th:text="${movie.year}"></span><br>
         Director: <span th:text="${movie.director}"></span><br>
