@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Music</title>
+</head>
+<body>
+<h1>Music List</h1>
+
+<ul>
+    <li th:each="music : ${music}" style="margin-bottom: 20px;">
+        <strong th:text="${music.artist}"></strong><br>
+        Song name: <span th:text="${music.songName}"></span><br>
+        Release date: <span th:text="${music.releaseYear}"></span><br>
+        Genre: <span th:text="${music.genre}"></span><br>
+
+    </li>
+</ul>
+
+</body>
+</html>
