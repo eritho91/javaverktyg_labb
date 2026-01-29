@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="sv" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Skrivtillbehör</title>
+</head>
+<body>
+<h1>Skrivtillbehör</h1>
+<ul>
+    <li th:each="supply : ${supplies}">
+        <span th:text="${supply.title}"></span> -
+        <span th:text="${supply.type}"></span>
+        (<span th:text="${supply.colour}"></span>)
+    </li>
+</ul>
+</body>
+</html>
