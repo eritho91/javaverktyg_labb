@@ -17,7 +17,8 @@ public class SupplyController {
         List<Supply> supplies = List.of(
                 new Supply("Ballpoint Pen", "Pen", "Black"),
                 new Supply("Eraser", "Pen", "White"),
-                new Supply("Notepad", "Pads", "Blue")
+                new Supply("Notepad", "Pads", "Blue"),
+                new Supply("Pencase", "Pen", "Beige")
         );
         model.addAttribute("supplies", supplies);
         return "supplies";
