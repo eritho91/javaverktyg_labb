@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
     @GetMapping
     public String home(Model model) {
-        model.addAttribute("greeting", "Välkommen!");
+        model.addAttribute("greeting", "Välkommen Asli!");
         return "home";
     }
 }
